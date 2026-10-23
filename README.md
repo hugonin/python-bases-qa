@@ -5,11 +5,11 @@ Exercice de consolidation Python dans le cadre de ma montée en compétence vers
 
 ## Contenu
 Le fichier resultats.py est composé d'une liste de résultats de test et de 5 fonctions:
-*  qui retourne le taux de réussite en pourcentage
-*  qui retourne la liste des identifiants en échec
-*  qui retourne un dictionnaire
-*  qui retourne le test le plus long
-*  qui lève une erreur explicite si un statut inconnu apparaît dans la liste
+*  ``` percentage_success```: taux de réussite en pourcentage, hors tests ignorés
+*  ``` failed_ids```: liste des identifiants en échec
+*  ``` count_by_module```: nombre de test par module
+*  ``` test_le_plus_long```:  test le plus long
+*  ``` check_statuts```: lève une erreur explicite si un statut inconnu apparaît dans la liste
 
 ## Lancer le script
 ```python resultats.py```
@@ -18,4 +18,4 @@ Le fichier resultats.py est composé d'une liste de résultats de test et de 5 f
 * Une fonction doit retourner une valeur pour être exploitée (return au lieu de print)
 * Manipulation des dictionnaires
 * Lire un traceback
-* Tester avec plus d'un jeu de données
+* Un test qui passe avec un seul jeu de données peut masquer un bug, comme je l’ai constaté sur ```test_le_plus_long```
